@@ -24,7 +24,7 @@ This page contains selected talks, papers, and other publications.
 
 - <a name="PhD Thesis"></a>Payas Awadhutkar. **Human-centric verification for software safety and security** *[Iowa State University](https://www.iastate.edu)*, Ames, Iowa, May 2020.<br/>
 **PhD Thesis:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>][[Slides](/docs/thesis/final-defense.pdf)]&nbsp;[[Thesis](/docs/thesis/human-centric-verification.pdf)]&nbsp;[[Library](https://dr.lib.iastate.edu/handle/20.500.12876/32192)]
-Software forms a critical part of our lives today. Verifying software to avoid violations of safety
+<div class="abstract"><p>Software forms a critical part of our lives today. Verifying software to avoid violations of safety
 and security properties is a necessary task. It is also imperative to have an assurance that the
 verification process was correct. We propose a human-centric approach to software verification. This
 involves enabling human-machine collaboration to detect vulnerabilities and to prove the correctness
@@ -42,7 +42,8 @@ the verification which can be scrutinized by a human to prove the correctness of
 present a novel abstraction, the Evidence Graph, that succinctly captures the verification evidence
 and show how to compute the evidence. We evaluate our approach against ML instances in the
 Linux kernel and report improvement over the state-of-the-art results. We also present two case
-studies to illustrate how the Evidence Graph can be used to prove the correctness of the verification.
+studies to illustrate how the Evidence Graph can be used to prove the correctness of the verification.</p>
+</div>
 
 <a name="2019"></a>
 
