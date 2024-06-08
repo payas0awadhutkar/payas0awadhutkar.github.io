@@ -23,7 +23,7 @@ This page contains selected talks, papers, and other publications.
 ## 2020
 
 - <a name="PhD Thesis"></a>Payas Awadhutkar. **Human-centric verification for software safety and security** *[Iowa State University](https://www.iastate.edu)*, Ames, Iowa, May 2020.<br/>
-**PhD Thesis:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>][[Slides](/docs/thesis/final-defense.pdf)]&nbsp;[[Thesis](/docs/thesis/human-centric-verification.pdf)]
+**PhD Thesis:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>][[Slides](/docs/thesis/final-defense.pdf)]&nbsp;[[Thesis](/docs/thesis/human-centric-verification.pdf)]&nbsp;[[Library](https://dr.lib.iastate.edu/handle/20.500.12876/32192)]
 Software forms a critical part of our lives today. Verifying software to avoid violations of safety
 and security properties is a necessary task. It is also imperative to have an assurance that the
 verification process was correct. We propose a human-centric approach to software verification. This
