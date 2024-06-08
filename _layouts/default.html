@@ -12,22 +12,50 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-		<script type="text/javascript">
-			$(document).ready(function() { 
-				$(".toggle-abstract").click(function() {
-					$(this).closest('li').parent().next('.abstract').toggle();
-					return false;   
-				});
-			});
-			</script>
+    <script type="text/javascript">if(window.location.protocol != "https:") { window.location.href = "https:" + window.location.href.substring(window.location.protocol.length); }</script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+       $(document).ready(function() {
+            // Tooltip only Text
+            $('.hover-tooltip').hover(function(){
+                    // Hover over code
+                    var tip = $(this).attr('tip');
+                    $(this).data('tipText', tip).removeAttr('tip');
+                    $('<p class="tooltip"></p>')
+                    .text(tip)
+                    .appendTo('body')
+                    .fadeIn('slow');
+            }, function() {
+                    // Hover out code
+                    $(this).attr('tip', $(this).data('tipText'));
+                    $('.tooltip').remove();
+            }).mousemove(function(e) {
+                    var mousex = e.pageX + 20; //Get X coordinates
+                    var mousey = e.pageY + 10; //Get Y coordinates
+                    $('.tooltip')
+                    .css({ top: mousey, left: mousex })
+            });
+    });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() { 
+            $(".toggle-abstract").click(function() {
+                 $(this).closest('li').parent().next('.abstract').toggle();
+                return false;   
+            });
+        });
+    </script>
+
   </head>
 
   <body>
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+          <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a> -->
 
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
